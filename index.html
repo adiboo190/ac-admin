@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+
+	<title>AC Dashboard</title>
+
+	<!-- Main Style -->
+	<link rel="stylesheet" type="text/css" href="./vendor/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="./css/base.css" />
+
+	<!-- Plugins -->
+	<link rel="stylesheet" type="text/css" href="./vendor/fontawesome-free/css/all.min.css" />
+
+</head>
+<body>
+
+	<div class="wrapper d-flex">
+		<div class="overlay-sm"></div>
+		<ul class="sidenav-wrapper accordion navbar-nav" id="mainSidebar">
+			<div class="sidenav-menus">
+				<a href="#" class="sidenav-header d-flex justify-content-center align-items-center">
+					<div class="sidenav-logo">
+						<i class="fas fa-laugh-wink fa-fw"></i>
+					</div>
+					<div class="sidenav-header-text mx-3">
+						<span>AC Dashboard</span>
+					</div>
+				</a>
+
+				<hr class="nav-separator" />
+
+				<h3 class="nav-heading">Beranda</h3>
+
+				<li class="nav-item">
+					<a href="#" class="nav-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						<span class="nav-icon"><i class="fas fa-fw fa-home"></i></span>
+						<span class="nav-text">Ini Teks</span>
+					</a>
+
+				    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#mainSidebar">
+					    <div class="collapse-list bg-white shadow">
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-list mr-2"></i>Test</a>
+					    	<a href="" class="collapse-list-items"></a>
+					    	<a href="" class="collapse-list-items"></a>
+					    </div>
+				    </div>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">
+						<span class="nav-icon"><i class="fas fa-fw fa-home"></i></span>
+						<span class="nav-text">Ini Teks</span>
+					</a>
+				</li>
+
+				<hr class="nav-separator" />
+
+				<li class="nav-item">
+					<a href="#" class="nav-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+						<span class="nav-icon"><i class="fas fa-fw fa-home"></i></span>
+						<span class="nav-text">Ini Teks</span>
+					</a>
+
+				    <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#mainSidebar">
+					    <div class="collapse-list bg-white shadow">
+					    	<h6 class="collapse-heading">Perkakas Kustom</h6>
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-link mr-2"></i>Ini Adalah Sebuah Tautan</a>
+					    </div>
+				    </div>
+				</li>
+
+				<hr class="nav-separator" />
+
+				<div class="nav-toggler text-center d-sm-none d-md-block">
+					<button class="nav-btn btn" id="close-button">
+						<i class="fas fa-plus"></i>
+					</button>
+				</div>
+			</div>
+		</ul>
+		<div class="content-wrapper">
+
+			<nav class="navbar navbar-expand-md navbar-light bg-white topbar align-items-center mb-3">
+				<button class="navbar-toggler" id="close-sm-button">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<div class="topbar-divider"></div>
+						<li class="nav-item dropdown no-arrow">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<img src="./img/male-default.png" class="mr-3" height="30px" /> Halo, Amir
+							</a>
+							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="container-fluid">
+				
+				<div class="card border border-left-primary mb-3 shadow">&nbsp;</div>
+				<div class="alert alert-success">&nbsp;</div>
+				<div class="alert alert-danger">&nbsp;</div>
+				<div class="alert alert-info">&nbsp;</div>
+				<div class="alert alert-secondary">&nbsp;</div>
+				<div class="alert alert-warning">&nbsp;</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./vendor/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="./vendor/jquery-easing/jquery.easing.min.js"></script>
+
+	<!-- Plugins -->
+	<script type="text/javascript" src="./js/base.js"></script>
+	<script type="text/javascript" src="./vendor/fontawesome-free/js/all.min.js"></script>
+	<script type="text/javascript" src=""></script>
+</body>
+</html>
