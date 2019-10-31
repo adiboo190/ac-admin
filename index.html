@@ -14,7 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="./vendor/fontawesome-free/css/all.min.css" />
 
 </head>
-<body>
+<body id="basePage">
 
 	<div class="wrapper d-flex">
 		<div class="overlay-sm"></div>
@@ -31,73 +31,154 @@
 
 				<hr class="nav-separator" />
 
-				<h3 class="nav-heading">Beranda</h3>
+				<h3 class="nav-heading">Panel Admin</h3>
 
 				<li class="nav-item">
-					<a href="#" class="nav-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					<a href="#" class="nav-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 						<span class="nav-icon"><i class="fas fa-fw fa-home"></i></span>
-						<span class="nav-text">Ini Teks</span>
+						<span class="nav-text">Dashboard</span>
 					</a>
 
-				    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#mainSidebar">
+				    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#mainSidebar">
 					    <div class="collapse-list bg-white shadow">
-					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-list mr-2"></i>Test</a>
-					    	<a href="" class="collapse-list-items"></a>
-					    	<a href="" class="collapse-list-items"></a>
+					    	<a href="" class="collapse-list-items active"><i class="fas fa-fw fa-tachometer-alt mr-2"></i>Versi Pertama</a>
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-tachometer-alt mr-2"></i>Versi Kedua<span class="badge badge-danger badge-mini">Tahap Beta</span></a>
 					    </div>
 				    </div>
 				</li>
+
 				<li class="nav-item">
 					<a href="#" class="nav-link">
-						<span class="nav-icon"><i class="fas fa-fw fa-home"></i></span>
-						<span class="nav-text">Ini Teks</span>
+						<span class="nav-icon"><i class="fas fa-fw fa-info-circle"></i></span>
+						<span class="nav-text">Tentang Template Ini</span>
 					</a>
 				</li>
 
-				<hr class="nav-separator" />
-
 				<li class="nav-item">
 					<a href="#" class="nav-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-						<span class="nav-icon"><i class="fas fa-fw fa-home"></i></span>
-						<span class="nav-text">Ini Teks</span>
+						<span class="nav-icon"><i class="fas fa-fw fa-wrench"></i></span>
+						<span class="nav-text">Halaman & Elemen</span>
 					</a>
 
 				    <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#mainSidebar">
 					    <div class="collapse-list bg-white shadow">
-					    	<h6 class="collapse-heading">Perkakas Kustom</h6>
-					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-link mr-2"></i>Ini Adalah Sebuah Tautan</a>
+					    	<h6 class="collapse-heading">Contoh Halaman</h6>
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-file mr-2"></i>Halaman Kosong</a>
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-sign-in-alt mr-2"></i>Halaman Masuk</a>
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-user-plus mr-2"></i>Halaman Mendaftar</a>
+					    	<h6 class="collapse-heading">Komponen Dasar</h6>
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-paint-brush mr-2"></i>Bagian Dasar</a>
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-paint-brush mr-2"></i>Navigasi Bilah Sisi</a>
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-paint-brush mr-2"></i>Navigasi Atas</a>
+					    	<h6 class="collapse-heading">Komponen</h6>
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-paint-brush mr-2"></i>Perkakas & Warna</a>
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-paint-brush mr-2"></i>Kartu & Peringatan</a>
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-paint-brush mr-2"></i>Navigasi & Tabulasi</a>
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-paint-brush mr-2"></i>Tombol & Kolom</a>
 					    </div>
 				    </div>
 				</li>
 
 				<hr class="nav-separator" />
 
-				<div class="nav-toggler text-center d-sm-none d-md-block">
-					<button class="nav-btn btn" id="close-button">
-						<i class="fas fa-plus"></i>
-					</button>
+				<h3 class="nav-heading">Elemen Tambahan</h3>
+
+				<li class="nav-item">
+					<a href="#" class="nav-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+						<span class="nav-icon"><i class="fas fa-fw fa-table"></i></span>
+						<span class="nav-text">Tabel</span>
+					</a>
+
+				    <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#mainSidebar">
+					    <div class="collapse-list bg-white shadow">
+					    	<h6 class="collapse-heading">Contoh Tabel</h6>
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-table mr-2"></i>Contoh Tabel Biasa</a>
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-table mr-2"></i>Contoh Tabel dengan Ajax</a>
+					    </div>
+				    </div>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="nav-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+						<span class="nav-icon"><i class="fas fa-fw fa-flag"></i></span>
+						<span class="nav-text">Ikon</span>
+					</a>
+
+				    <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#mainSidebar">
+					    <div class="collapse-list bg-white shadow">
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-flag mr-2"></i>FontAwesome 5.9</a>
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-flag mr-2"></i>Google Material Icon</a>
+					    </div>
+				    </div>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="nav-link">
+						<span class="nav-icon"><i class="fas fa-fw fa-exclamation-triangle"></i></span>
+						<span class="nav-text">SweetAlert</span>
+					</a>
+				</li>
+
+				<hr class="nav-separator" />
+
+				<div class="nav-toggler text-center mb-3">
+					<button class="nav-btn btn" id="close-button"></button>
 				</div>
 			</div>
 		</ul>
 		<div class="content-wrapper">
-
-			<nav class="navbar navbar-expand-md navbar-light bg-white topbar align-items-center mb-3">
-				<button class="navbar-toggler" id="close-sm-button">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+			<nav class="navbar navbar-expand navbar-light bg-white topbar align-items-center mb-3">
+				<button class="nav-btn btn" id="close-sm-button"><i class="fas fa-bars"></i></button>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-						</li>
+						<li class="nav-item dropdown no-arrow">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="nav-icon"><i class="fas fa-fw fa-list"></i></span>
+								<span class="badge badge-counter badge-primary">7+</span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-right dropdown-notify" aria-labelledby="navbarDropdown">
+								<div class="dropdown-header d-flex justify-content-between border-bottom">
+									<p class="m-0 text-muted">Pesan</p>
+									<a href="javascript:void(0);" onclick="javascript:void(0);" class="m-0 text-muted">Abaikan Semuanya</a>
+								</div>
+								<div class="dropdown-body">
+									<a class="dropdown-item active d-flex" href="#">
+										<div class="image-lists mr-4">
+											<img src="./img/user-default.png" height="50px" />
+											<span class="status-indicator"></span>
+										</div>
+										<div class="dropdown-menu-text">
+											<h6 class="m-0">Muhammad Royyan</h6>
+											<p class="text-truncate text-muted m-0">Bro, nanti kalau ada waktu benerin dong akun saya?</p>
+											<p class="text-muted m-0"><small>Beberapa Saat Yang Lalu</small></p>
+										</div>
+									</a>
+									<a class="dropdown-item d-flex" href="#">
+										<div class="image-lists mr-4">
+											<img src="./img/female-default.png" height="30px" />
+											<span class="status-indicator bg-success"></span>
+										</div>
+										<div class="dropdown-menu-text">
+											<h6 class="m-0">Indriastutik</h6>
+											<p class="text-truncate text-muted m-0"><i class="fas fa-reply mr-1"></i> Me: Iyo, sek tho, ngko lak yo tak benekne</p>
+											<p class="text-muted m-0"><small>1 Jam yang lalu</small></p>
+										</div>
+									</a>
+								</div>
+								<div class="dropdown-header d-flex justify-content-between border-top">
+									<p class="m-0 text-muted">&nbsp;</p>
+									<a href="#" onclick="javascript:void(0);" class="m-0 text-muted">Lihat Semua Pesan!</a>
+								</div>
+							</div>
+						</li>		
 						<div class="topbar-divider"></div>
 						<li class="nav-item dropdown no-arrow">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<img src="./img/male-default.png" class="mr-3" height="30px" /> Halo, Amir
+								<span class="d-none d-md-none d-lg-inline">Halo, Amir</span> <img src="./img/male-default.png"  class="shadow rounded-circle ml-1" height="30px" /> 
 							</a>
 							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 								<a class="dropdown-item" href="#">Action</a>
@@ -110,16 +191,234 @@
 				</div>
 			</nav>
 
-			<div class="container-fluid">
-				
-				<div class="card border border-left-primary mb-3 shadow">&nbsp;</div>
-				<div class="alert alert-success">&nbsp;</div>
-				<div class="alert alert-danger">&nbsp;</div>
-				<div class="alert alert-info">&nbsp;</div>
-				<div class="alert alert-secondary">&nbsp;</div>
-				<div class="alert alert-warning">&nbsp;</div>
+			<main class="container-fluid blank-pages">
 
-			</div>
+				<!-- Page Header -->
+				<div class="d-flex justify-content-between align-items-center">
+					<h1 class="h3 font-weight-normal">Beranda</h1>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb bg-transparent">
+							<li class="breadcrumb-item"><a href="./login.html">Beranda</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+						</ol>
+					</nav>
+				</div>
+
+				<!-- Row -->
+				<div class="row">
+					
+					<!-- Earnings -->
+					<div class="col-md-6 col-lg-3 col-sm-12 mb-3">
+						<div class="card border-left-primary shadow py-2">
+							<div class="card-body">
+								<div class="row no-gutters">
+									<div class="col">
+										<h4 class="m-0 mb-1 text-xs text-primary font-weight-bold text-uppercase">Pendapatanmu</h4>
+										<p class="m-0 font-weight-bold h6">$72.000</p>
+									</div>
+									<div class="col-auto">
+										<i class="fas fa-fw fa-money-bill fa-2x text-gray-250"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Tugas -->
+					<div class="col-md-6 col-lg-3 col-sm-12 mb-3">
+						<div class="card border-left-warning shadow py-2">
+							<div class="card-body">
+								<div class="row no-gutters">
+									<div class="col">
+										<h4 class="m-0 mb-1 text-xs text-warning font-weight-bold text-uppercase">Presentase Penjualan</h4>
+										<div class="row align-items-center no-gutters">
+											<div class="col-auto">
+												<div class="h6 mb-0 mr-3 font-weight-bold">50%</div>
+											</div>
+											<div class="col">
+												<div class="progress progress-sm mr-2">
+												<div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-auto">
+										<i class="fas fa-fw fa-clipboard-list fa-2x text-gray-250"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Users -->
+					<div class="col-md-6 col-lg-3 col-sm-12 mb-3">
+						<div class="card border-left-success shadow py-2">
+							<div class="card-body">
+								<div class="row no-gutters">
+									<div class="col">
+										<h4 class="m-0 mb-1 text-xs text-warning font-weight-bold text-uppercase">Pengguna</h4>
+										<div class="h6 mb-0 mr-3 font-weight-bold">12.525 Pengguna</div>
+									</div>
+									<div class="col-auto">
+										<i class="fas fa-fw fa-users fa-2x text-gray-250"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Server Status -->
+					<div class="col-md-6 col-lg-3 col-sm-12 mb-3">
+						<div class="card border-left-info shadow py-2">
+							<div class="card-body">
+								<div class="row no-gutters">
+									<div class="col">
+										<h4 class="m-0 mb-1 text-xs text-warning font-weight-bold text-uppercase">Status Peladen</h4>
+										<div class="row align-items-center no-gutters">
+											<div class="col-auto">
+												<div class="h6 mb-0 mr-3 font-weight-bold">82.5%</div>
+											</div>
+											<div class="col">
+												<div class="progress progress-sm mr-2">
+												<div class="progress-bar bg-success" role="progressbar" style="width: 82.5%" aria-valuenow="85.2" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-auto">
+										<i class="fas fa-fw fa-server fa-2x text-gray-250"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Server Uptime Cards -->
+				<div class="row">
+
+					<div class="col-md-8 mb-3">
+
+						<div class="card shadow">
+							<div class="card-header d-flex justify-content-between">
+								<p class="font-weight-bold m-0 text-primary text-uppercase">Server Uptime</p>
+								<div class="dropdown">
+									<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+
+									<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+										<a class="dropdown-item" href="#">Muat Ulang</a>
+										<a class="dropdown-item" href="#">Lihat Keseluruhan</a>
+									</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="chart-area">
+									<canvas id="ChartUptimeServer"></canvas>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+
+					<div class="col-md-4 mb-3">
+
+						<div class="card shadow">
+							<div class="card-header d-flex justify-content-between align-items-center">
+								<p class="font-weight-bold m-0 text-primary text-uppercase m-0">Tugasku</p>
+								<div class="dropdown">
+									<button class="btn btn-link dropdown-toggle p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+									<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+										<a class="dropdown-item" href="#">Muat Ulang</a>
+										<a class="dropdown-item" href="#">Matikan Notifikasi</a>
+										<a class="dropdown-item" href="#">Lihat Semuanya</a>
+									</div>
+								</div>
+							</div>
+							<div class="list-group list-group-flush">
+								<div class="list-group-item d-flex">
+									<div class="custom-control custom-checkbox my-1 mr-sm-2">
+										<input type="checkbox" class="custom-control-input" id="customControlInline">
+										<label class="custom-control-label" for="customControlInline">&nbsp;</label>
+									</div>
+									<div class="img-lists mr-3">
+										<img src="./img/logo-512x512.png" height="30px" />
+									</div>
+									<div class="items-lists">
+										<h6 class="m-0 font-weight-bold">Menyalakan Ulang Server 1</h6>
+										<p class="m-0 text-gray-250">Jum'at, 01 November 2019</p>
+									</div>
+								</div>
+							</div>
+							<div class="list-group list-group-flush">
+								<div class="list-group-item d-flex">
+									<div class="custom-control custom-checkbox my-1 mr-sm-2">
+										<input type="checkbox" checked="checked" class="custom-control-input" id="customControlInline">
+										<label class="custom-control-label" for="customControlInline">&nbsp;</label>
+									</div>
+									<div class="img-lists mr-3">
+										<img src="./img/logo-512x512.png" height="30px" />
+									</div>
+									<div class="items-lists">
+										<h6 class="m-0 font-weight-bold">Mengganti RAM di Server 12</h6>
+										<p class="m-0 text-gray-250">Minggu, 14 Oktober 2019</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+
+				</div>
+
+				<!-- Products -->
+				<div class="row">
+
+					<div class="col-md-4">
+						<div class="card shadow">
+							<div class="card-header d-flex justify-content-between">
+								<h6 class="text-primary font-weight-bold">Stok Produk yang Hampir Habis</h6>
+								<div class="dropdown">
+									<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+
+									<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+										<a class="dropdown-item" href="#">Muat Ulang</a>
+										<a class="dropdown-item" href="#">Lihat Keseluruhan</a>
+									</div>
+								</div>
+							</div>
+							<div class="table-responsive m-0">
+								<table class="table table-striped m-0">
+									<thead>
+										<tr><th>No.</th><th>#ID Produk</th><th>Stok Tersisa</th><th>Aksi</th></tr>
+									</thead>
+									<tbody>
+										<tr><th>1.</th><td>#LOREM001</td><td>10</td><td class="btn-group-sm btn-group"><button class="btn btn-primary btn-sm"><i class="fas fa-plus mr-1"></i>Stok</button><button class="btn btn-primary btn-sm"><i class="fas fa-eye mr-1"></i>Ubah</button></td></tr>
+										<tr><th>1.</th><td>#LOREM001</td><td>10</td><td class="btn-group-sm btn-group"><button class="btn btn-primary btn-sm"><i class="fas fa-plus mr-1"></i>Stok</button><button class="btn btn-primary btn-sm"><i class="fas fa-eye mr-1"></i>Ubah</button></td></tr>
+										<tr><th>1.</th><td>#LOREM001</td><td>10</td><td class="btn-group-sm btn-group"><button class="btn btn-primary btn-sm"><i class="fas fa-plus mr-1"></i>Stok</button><button class="btn btn-primary btn-sm"><i class="fas fa-eye mr-1"></i>Ubah</button></td></tr>
+										<tr><th>1.</th><td>#LOREM001</td><td>10</td><td class="btn-group-sm btn-group"><button class="btn btn-primary btn-sm"><i class="fas fa-plus mr-1"></i>Stok</button><button class="btn btn-primary btn-sm"><i class="fas fa-eye mr-1"></i>Ubah</button></td></tr>
+										<tr><th>1.</th><td>#LOREM001</td><td>10</td><td class="btn-group-sm btn-group"><button class="btn btn-primary btn-sm"><i class="fas fa-plus mr-1"></i>Stok</button><button class="btn btn-primary btn-sm"><i class="fas fa-eye mr-1"></i>Ubah</button></td></tr>
+										<tr><th>1.</th><td>#LOREM001</td><td>10</td><td class="btn-group-sm btn-group"><button class="btn btn-primary btn-sm"><i class="fas fa-plus mr-1"></i>Stok</button><button class="btn btn-primary btn-sm"><i class="fas fa-eye mr-1"></i>Ubah</button></td></tr>
+										<tr><th>1.</th><td>#LOREM001</td><td>10</td><td class="btn-group-sm btn-group"><button class="btn btn-primary btn-sm"><i class="fas fa-plus mr-1"></i>Stok</button><button class="btn btn-primary btn-sm"><i class="fas fa-eye mr-1"></i>Ubah</button></td></tr>
+										<tr><th>1.</th><td>#LOREM001</td><td>10</td><td class="btn-group-sm btn-group"><button class="btn btn-primary btn-sm"><i class="fas fa-plus mr-1"></i>Stok</button><button class="btn btn-primary btn-sm"><i class="fas fa-eye mr-1"></i>Ubah</button></td></tr>
+										<tr><th>1.</th><td>#LOREM001</td><td>10</td><td class="btn-group-sm btn-group"><button class="btn btn-primary btn-sm"><i class="fas fa-plus mr-1"></i>Stok</button><button class="btn btn-primary btn-sm"><i class="fas fa-eye mr-1"></i>Ubah</button></td></tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</main>
+
+			<footer class="main-footer">
+				<div class="container my-auto">
+					<span class="my-auto copyright text-center">Hak Cipta 2019 <a href="//adiboo190.github.io/ac-dashboard/">AC Dashboard</a>.</span>
+				</div>
+			</footer>
+
+			<a href="#basePage" class="btn btn-scroll-to-top" id="btnToUp"></a>
 
 		</div>
 	</div>
@@ -131,6 +430,7 @@
 	<!-- Plugins -->
 	<script type="text/javascript" src="./js/base.js"></script>
 	<script type="text/javascript" src="./vendor/fontawesome-free/js/all.min.js"></script>
-	<script type="text/javascript" src=""></script>
+	<script type="text/javascript" src="./vendor/chart.js/Chart.min.js"></script>
+	<script type="text/javascript" src="./js/demo/chart-server.js"></script>
 </body>
 </html>

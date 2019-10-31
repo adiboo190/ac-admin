@@ -9,9 +9,29 @@
 	$(document).ready(function () {
 
 		$( '#close-button, #close-sm-button' ).click(function () {
+			$( this ).find('i').toggleClass('fa-plus fa-minus');
 			$('.wrapper').toggleClass('trigger');
 		});
 
+	});
+
+	// Scroll to top button appear
+	$(document).on('scroll', function() {
+		var scrollDistance = $(this).scrollTop();
+		if (scrollDistance > 100) {
+			$('#btnToUp').fadeIn();
+		} else {
+			$('#btnToUp').fadeOut();
+		}
+	});
+
+	// Smooth scrolling using jQuery easing
+	$(document).on('click', 'a#btnToUp', function(e) {
+		var $anchor = $(this);
+		$('html, body').stop().animate({
+			scrollTop: ($($anchor.attr('href')).offset().top)
+		}, 1000, 'easeInOutExpo');
+		e.preventDefault();
 	});
 
 })(jQuery);

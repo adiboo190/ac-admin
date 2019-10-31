@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+
+	<title>AC Dashboard &mdash; Informasi Template</title>
+
+	<!-- Main Style -->
+	<link rel="stylesheet" type="text/css" href="./vendor/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="./css/base.css" />
+
+	<!-- Plugins -->
+  	<link href="./vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="./vendor/fontawesome-free/css/all.min.css" />
+
+</head>
+<body id="basePage">
+
+	<div class="wrapper d-flex">
+		<div class="overlay-sm"></div>
+		<ul class="sidenav-wrapper accordion navbar-nav" id="mainSidebar">
+			<div class="sidenav-menus">
+				<a href="#" class="sidenav-header d-flex justify-content-center align-items-center">
+					<div class="sidenav-logo">
+						<i class="fas fa-laugh-wink fa-fw"></i>
+					</div>
+					<div class="sidenav-header-text mx-3">
+						<span>AC Dashboard</span>
+					</div>
+				</a>
+
+				<hr class="nav-separator" />
+
+				<h3 class="nav-heading">Panel Admin</h3>
+
+				<li class="nav-item">
+					<a href="#" class="nav-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						<span class="nav-icon"><i class="fas fa-fw fa-home"></i></span>
+						<span class="nav-text">Dashboard</span>
+					</a>
+
+				    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#mainSidebar">
+					    <div class="collapse-list bg-white shadow">
+					    	<a href="" class="collapse-list-items active"><i class="fas fa-fw fa-tachometer-alt mr-2"></i>Versi Pertama</a>
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-tachometer-alt mr-2"></i>Versi Kedua<span class="badge badge-danger badge-mini">Tahap Beta</span></a>
+					    </div>
+				    </div>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="nav-link">
+						<span class="nav-icon"><i class="fas fa-fw fa-info-circle"></i></span>
+						<span class="nav-text">Tentang Template Ini</span>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="nav-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+						<span class="nav-icon"><i class="fas fa-fw fa-wrench"></i></span>
+						<span class="nav-text">Halaman & Elemen</span>
+					</a>
+
+				    <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#mainSidebar">
+					    <div class="collapse-list bg-white shadow">
+					    	<h6 class="collapse-heading">Contoh Halaman</h6>
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-file mr-2"></i>Halaman Kosong</a>
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-sign-in-alt mr-2"></i>Halaman Masuk</a>
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-user-plus mr-2"></i>Halaman Mendaftar</a>
+					    	<h6 class="collapse-heading">Komponen</h6>
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-paint-brush mr-2"></i>Perkakas & Warna</a>
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-paint-brush mr-2"></i>Kartu & Peringatan</a>
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-paint-brush mr-2"></i>Navigasi & Tabulasi</a>
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-paint-brush mr-2"></i>Tombol & Kolom</a>
+					    </div>
+				    </div>
+				</li>
+
+				<hr class="nav-separator" />
+
+				<h3 class="nav-heading">Elemen Tambahan</h3>
+
+				<li class="nav-item">
+					<a href="#" class="nav-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+						<span class="nav-icon"><i class="fas fa-fw fa-table"></i></span>
+						<span class="nav-text">Tabel</span>
+					</a>
+
+				    <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#mainSidebar">
+					    <div class="collapse-list bg-white shadow">
+					    	<h6 class="collapse-heading">Contoh Tabel</h6>
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-table mr-2"></i>Contoh Tabel Biasa</a>
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-table mr-2"></i>Contoh Tabel dengan Ajax</a>
+					    </div>
+				    </div>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="nav-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+						<span class="nav-icon"><i class="fas fa-fw fa-flag"></i></span>
+						<span class="nav-text">Ikon</span>
+					</a>
+
+				    <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#mainSidebar">
+					    <div class="collapse-list bg-white shadow">
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-flag mr-2"></i>FontAwesome 5.9</a>
+					    	<a href="" class="collapse-list-items"><i class="fas fa-fw fa-flag mr-2"></i>Google Material Icon</a>
+					    </div>
+				    </div>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="nav-link">
+						<span class="nav-icon"><i class="fas fa-fw fa-exclamation-triangle"></i></span>
+						<span class="nav-text">SweetAlert</span>
+					</a>
+				</li>
+
+				<hr class="nav-separator" />
+
+				<div class="nav-toggler text-center mb-3">
+					<button class="nav-btn btn" id="close-button"></button>
+				</div>
+			</div>
+		</ul>
+		<div class="d-flex flex-column content-wrapper">
+			<div class="main-content">
+
+				<nav class="navbar navbar-expand navbar-light bg-white topbar align-items-center mb-3">
+					<button class="nav-btn btn" id="close-sm-button"><i class="fas fa-bars"></i></button>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item dropdown no-arrow">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<span class="nav-icon"><i class="fas fa-fw fa-list"></i></span>
+									<span class="badge badge-counter badge-primary">7+</span>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right dropdown-notify" aria-labelledby="navbarDropdown">
+									<div class="dropdown-header d-flex justify-content-between border-bottom">
+										<p class="m-0 text-muted">Pesan</p>
+										<a href="javascript:void(0);" onclick="javascript:void(0);" class="m-0 text-muted">Abaikan Semuanya</a>
+									</div>
+									<div class="dropdown-body">
+										<a class="dropdown-item active d-flex" href="#">
+											<div class="image-lists mr-4">
+												<img src="./img/user-default.png" height="50px" />
+												<span class="status-indicator"></span>
+											</div>
+											<div class="dropdown-menu-text">
+												<h6 class="m-0">Muhammad Royyan</h6>
+												<p class="text-truncate text-muted m-0">Bro, nanti kalau ada waktu benerin dong akun saya?</p>
+												<p class="text-muted m-0"><small>Beberapa Saat Yang Lalu</small></p>
+											</div>
+										</a>
+										<a class="dropdown-item d-flex" href="#">
+											<div class="image-lists mr-4">
+												<img src="./img/female-default.png" height="30px" />
+												<span class="status-indicator bg-success"></span>
+											</div>
+											<div class="dropdown-menu-text">
+												<h6 class="m-0">Indriastutik</h6>
+												<p class="text-truncate text-muted m-0"><i class="fas fa-reply mr-1"></i> Me: Iyo, sek tho, ngko lak yo tak benekne</p>
+												<p class="text-muted m-0"><small>1 Jam yang lalu</small></p>
+											</div>
+										</a>
+									</div>
+									<div class="dropdown-header d-flex justify-content-between border-top">
+										<p class="m-0 text-muted">&nbsp;</p>
+										<a href="#" onclick="javascript:void(0);" class="m-0 text-muted">Lihat Semua Pesan!</a>
+									</div>
+								</div>
+							</li>		
+							<div class="topbar-divider"></div>
+							<li class="nav-item dropdown no-arrow">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<span class="d-none d-md-none d-lg-inline">Halo, Amir</span> <img src="./img/male-default.png"  class="shadow rounded-circle ml-1" height="30px" /> 
+								</a>
+								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+
+				<main class="container-fluid blank-pages">
+
+					<!-- Page Header -->
+					<div class="d-flex justify-content-between align-items-center">
+						<h1 class="h3 font-weight-normal">Info Template</h1>
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb bg-transparent">
+								<li class="breadcrumb-item"><a href="./login.html">Beranda</a></li>
+								<li class="breadcrumb-item"><a href="./">Dashboard</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Info</li>
+							</ol>
+						</nav>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+
+<div class="card shadow">
+	<div class="card-header">
+		<ul class="nav nav-tabs card-header-tabs">
+			<li class="nav-item">
+				<a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Info Template</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="nav-how-tab" data-toggle="tab" href="#nav-how" role="tab" aria-controls="nav-how" aria-selected="true">Cara Unduh</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="nav-credit-tab" data-toggle="tab" href="#nav-credit" role="tab" aria-controls="nav-credit" aria-selected="true">Kredit Bagian</a>
+			</li>
+		</ul>
+	</div>
+	<div class="card-body tab-content">
+		<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+			<div class="row">
+				<div class="col-md-8">
+					<h5>AC Dashboard <small class="badge-danger badge">v1.0.0-andong</small></h5>
+					<div class="table-responsive">
+						<table class="table table-striped">
+							<tr><th>Pembuat</th><td>: Adiboo Creative Design</td></tr>
+							<tr><th>Tanggal Rilis</th><td>: Jum'at 01 November 2019</td></tr>
+							<tr><th>Versi</th><td>: 1.0.0</td></tr>
+							<tr><th>Status</th><td>: <span class="badge badge-danger">Beta Version</span></td></tr>
+						</table>
+					</div>
+					<p>Template AC Dashboard ini dirancang untuk halaman website dengan panel admin yang responsif dan mudah digunakan untuk semuanya.</p>
+				</div>
+				<div class="col-md-4">
+					<img src="./img/demo-image/screenshot.png" width="100%" />
+				</div>
+			</div>
+			<div class="table-responsive">
+				<b id="version-title">Daftar Versi</b>
+
+<div class="accordion list-group mt-3" id="versions">
+	<div class="list-group-item shadow">
+		<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#versi-1-2" aria-expanded="false" aria-controls="versi-1-2">
+		Versi 1.1.0
+		</button>
+		<div id="versi-1-2" class="collapse" aria-labelledby="headingThree" data-parent="#versions">
+			&nbsp;
+		</div>
+	</div>
+	<div class="list-group-item">
+		<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#versi-1" aria-expanded="false" aria-controls="versi-1">
+		Versi 1.0.0
+		</button>
+		<div id="versi-1" class="collapse show" aria-labelledby="headingThree" data-parent="#versions">
+			
+			<table class="table table-striped" id="dataTable">
+				<thead>
+					<tr><th>#</th><th>Nama Versi</th><th>Status</th><th>Tanggal Rilis</th><th>Unduh</th></tr>
+				</thead>
+				<tbody>
+					<tr><td>1.</td><td>Becak</td><td><span class="badge-light badge">Belum Ada</span></td><td>-</td><td><a href="#" class="btn btn-warning disabled"><i class="fas fa-download mr-2"></i>Unduh</a></td></tr>
+					<tr><td>1.</td><td>Andong</td><td><span class="badge-danger badge">Beta</span></td><td>Jum'at 01 November 2019</td><td><a href="//github.com/ac-dashboard/latest.zip" class="btn btn-warning"><i class="fas fa-download mr-2"></i>Unduh</a></td></tr>
+				</tbody>
+			</table>
+
+		</div>
+	</div>
+</div>
+
+			</div>
+		</div>
+		<div class="tab-pane fade" id="nav-how" role="tabpanel" aria-labelledby="nav-how-tab">...</div>
+		<div class="tab-pane fade" id="nav-credit" role="tabpanel" aria-labelledby="nav-credit-tab">...</div>
+	</div>
+</div>
+
+						</div>
+					</div>
+
+				</main>
+
+			</div>
+
+			<footer class="main-footer">
+				<div class="container my-auto">
+					<span class="my-auto copyright text-center">Hak Cipta 2019 <a href="//adiboo190.github.io/ac-dashboard/">AC Dashboard</a>.</span>
+				</div>
+			</footer>
+
+			<a href="#basePage" class="btn btn-scroll-to-top" id="btnToUp"></a>
+
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./vendor/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="./vendor/jquery-easing/jquery.easing.min.js"></script>
+
+	<!-- Plugins -->
+	<script type="text/javascript" src="./js/base.js"></script>
+	<script type="text/javascript" src="./vendor/fontawesome-free/js/all.min.js"></script>
+	<script src="vendor/datatables/jquery.dataTables.min.js"></script>
+	<script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+<script type="text/javascript">
+// Call the dataTables jQuery plugin
+$(document).ready(function() {
+  $('#dataTable').DataTable();
+});
+</script>
+
+</body>
+</html>
